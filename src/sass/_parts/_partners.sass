@@ -1,0 +1,52 @@
+.partners
+	background-image: url('../img/trusted-partners.jpg')
+	background-size: cover
+	background-attachment: fixed
+	min-height: 100vh
+
+.sctPartners
+	flex-direction: row
+	justify-content: flex-end
+
+	+xs(justify-content, center)
+	
+	&__wrapper
+		+col()
+		+size(7)
+
+		+size-xs(12)
+	&__line,
+	&__title,
+	&__h3,
+	&__text
+		width: auto
+		text-align: left
+		margin: auto 0
+		+size-xs(12)
+
+		+xs(text-align, center)
+
+	&__line
+		
+		width: 30px
+		margin: 0 0 30px 0
+
+		+xs-block()
+			width: 30px
+			margin: 0 auto 30px
+
+	&__text
+		margin: 40px 0
+
+	&__title
+		margin: 0 0 10px
+
+	&__link
+		margin: 0 0 100px 0
+		display: block
+.cip-right
+	color: #3E705D
+	font-size: 30px
+
+
+

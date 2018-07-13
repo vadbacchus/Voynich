@@ -1,0 +1,150 @@
+.header
+	background: url('../img/header-bg.jpg')
+	background-size: cover
+	background-attachment: fixed
+	min-height: 100vh
+
+
+	.wrapper
+		display: flex
+		flex-direction: column
+		min-height: 100vh
+
+
+
+.navbar
+	+row-flex()
+	align-items: center
+	padding: 20px 0 0 0
+.logo
+	+col()
+
+	+xs(margin, 0)
+
+.nav
+	+col()
+	margin-left: auto
+
+	+sm-block()
+		width: 0
+		height: 100%
+		background: #fff
+		overflow: hidden
+		position: fixed
+		top: 0
+		left: 0
+		transition: .5s
+
+	&.show
+		width: 100%
+
+	&__list
+		+row-flex()
+
+		+sm-block()
+			
+			width: 100%
+			height: 100%
+			
+			flex-direction: column
+			align-items: center
+			justify-content: center
+		
+	&__item
+		+col()
+
+		+sm(margin, 0 0 30px 0)
+
+	&__link
+		font-size: 13px
+		text-transform: uppercase
+
+		+sm-block()
+			color: #3e705d
+			background: $accent
+			padding: 10px
+			font-size: 20px
+
+	&__closebtn
+		display: none
+
+		+sm-block()
+			display: block
+			position: absolute
+			top: 10px
+			right: 10px
+			border: none
+			background: $accent
+			font-size: 16px
+
+.nav-btn
+	+col()
+	display: none
+	border: none
+	background: $accent
+	font-size: 16px
+
+	+sm-block()
+		display: block
+		order: 2
+			
+
+
+.liveChat--header
+	+col()
+
+	+sm(margin, 0 0 0 auto)
+	
+
+.titleBar
+	+row-flex()
+	flex-direction: column
+	margin: auto 0
+
+
+	&__caption
+		font-family: $OS
+		font-size: 24px
+		color: #fff
+
+		a
+			color: $accent
+			text-decoration: underline
+
+
+
+.mainTitle
+	color: $accent
+	font-size: 72px
+	line-height: 1.2
+
+	+xs(font-size, 50px)
+
+	span
+		display: block
+
+.scrollDown
+	margin: 50px 0 0 0
+
+	+xs-block()
+		display: flex
+		justify-content: center
+
+.cip-down
+	color: $accent
+	font-size: 30px
+	margin: 0 0 0 70px
+	
+
+	&:before
+		transition: .5s
+	&:hover::before
+		transform: translateY(10px) 
+
+
+
+	+xs(margin, 0)
+
+
+	
+	

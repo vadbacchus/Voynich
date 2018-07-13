@@ -1,0 +1,44 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "_mixins/_smart-grid"
+
+
+::placeholder
+	color: #fff
+
+::selection
+	background-color: $accent
+	color: #3e705d
+
+html, body
+	height: 100%
+	// scroll-behavior: smooth
+
+body
+	font-size: 16px
+	min-width: 320px
+	max-width: 1700px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	margin: 0 auto
+	input, textarea
+			border: #666 1px solid
+			outline: none
+
+
+@import "_parts/_GLOBAL"
+@import "_parts/_header"
+@import "_parts/_about"
+@import "_parts/_features"
+@import "_parts/_partners"
+@import "_parts/_testimonials"
+@import "_parts/_contacts"
+@import "_parts/_footer"
+			
+
+
+@import "animations"
+
