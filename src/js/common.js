@@ -11,7 +11,7 @@ navClose.onclick = function() {
 	nav.classList.remove('show');
 }
 
-var scrolling = document.querySelectorAll('a');
+var scrolling = document.querySelectorAll('a[href^="#"]');
 
 for (var i = 0; i < scrolling.length; i++) {
 	 scrolling[i].onclick = function(e) {
